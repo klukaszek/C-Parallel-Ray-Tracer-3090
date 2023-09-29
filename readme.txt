@@ -8,6 +8,14 @@ Due: 09/29/2023
 Instructions:
 - Running 'make' will compile the 2 programs and create 2 executables, data and task.
 - Tested on SOCS Linux Server
+-  The data.c program is run with the following command:
+    - ./data -t <threads> -s <scale>
+    - you can also use -o to output the image to a file
+    - Example: ./data -t 2 1
+- The task.c program is run with the following command:
+    - ./task -t <threads> -s <scale>
+    - you can also use -o to output the image to a file
+    - Example: ./task -t 2 1
 
 Testing Computer Specifications:
 
