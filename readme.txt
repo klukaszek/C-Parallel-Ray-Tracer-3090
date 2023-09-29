@@ -44,7 +44,7 @@ Scale
 - The results above show that the program runs faster as the number of threads increases but it seems that the speedup is most obvious when going from 1 to 2 threads. After that, the speedup is not as significant going from 2-6 threads.
 - Interestingly, as the scale increases using 7-8 threads is faster than using 6 threads even though my CPU is bound to 6 at a time. The difference between 7-8 is negligible though and can be attributed to variance at lower scales.
 - However, at higher scales, it seems as though using 7 threads can result in faster times at points but there is more variance. Using 8 threads never seems to peak as fast as 7 threads but is more consistent over multiple tests and the difference is negligible. 
-- Data parallelism is beneficial for ray tracing and is practical at all scales and thread counts. There is a obvious difference in performance between the original code and the data parallelized code at all scales.
+- Data parallelism is beneficial for ray tracing and is practical at all scales and thread counts. There is a obvious difference in performance between the original code and the data parallelized code at all scales and thread counts.
 
 ------------------------------------------------------------
 
@@ -68,10 +68,9 @@ Scale
    2       99.231613 | 143.084694 | 185.380069 |
    3      224.071913 | 315.898915 | 411.448293 |
 
-
 - The fastest result always comes from using 1 thread which makes sense since it has the least amount of overhead from creating and joining threads, and is most similar to the provided code in ray.c. 
     - It is still significantly slower than ray.c.
 - Using 2 threads is always slower than using 1 thread and using 3 threads is always slower than using 2 threads.
 - The results are consistent over multiple tests and the difference is significant between each amount of threads.
 - I am not sure if I made a mistake when implementing the algorithms but I made sure to follow the example of the provided code in ray.c and I am not sure how I could have made it faster since I properly implemented pthread creation and joining.
-- Task parallelism is not beneficial for ray tracing and is just ridiculously slow and impractical at all scales.
+- Task parallelism is not beneficial for ray tracing and is just ridiculously slow and impractical at all scales and thread counts.
