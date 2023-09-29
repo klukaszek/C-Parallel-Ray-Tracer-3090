@@ -59,7 +59,7 @@ Part 2: Task Parallelization
     - void* calculate_shadow(void* arg)
 - Using anything more than 3 threads would also not make much sense since many of the loops are dependent on the max number of objects in the scene (spheres = 3, and lights = 3) which is 3 in this case. 
     - The code is written in such a way that would handle more objects but for testing purposes I will leave it at 3 threads since it is already incredibly slow.
-
+- This implementation uses significantly more memory than ray.c and data.c since it has to allocate memory for the data that is being passed to each thread in every loop iteration.
 
 task.c Results in seconds
     Threads         1          2           3
