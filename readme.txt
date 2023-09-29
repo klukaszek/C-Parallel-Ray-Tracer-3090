@@ -20,7 +20,6 @@ Instructions:
 Testing Computer Specifications:
 
 CPU - Intel Core i5-9600k OC @ 4.9GHz, 6 cores, 6 threads
-GPU - Nvidia RTX 2070 Super
 RAM - 32GB DDR4 @ 3600MHz
 
 ------------------------------------------------------------
