@@ -1,6 +1,8 @@
 Name: Kyle Lukaszek
 ID: 1113798
 
+Assignment Grade: 100%
+
 CIS 3090: Parallel Programming
 Assignment 1 - Pthread Parallelized Ray Tracer
 Due: 09/29/2023
